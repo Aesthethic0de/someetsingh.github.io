@@ -115,6 +115,38 @@
 
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	<style>
+		.navbar {
+		  z-index: 1000; /* This ensures the navbar is always on top */
+		}
+		
+		.one-third.js-fullheight.order-md-last.img {
+		  margin-top: 60px; /* Adjust this value as needed to create space between the navbar and the image */
+		  background-size: contain; /* This ensures the entire image is visible */
+		  background-repeat: no-repeat;
+		}
+		
+		/* For screens smaller than 600px */
+		@media (max-width: 600px) {
+		  .one-third.js-fullheight.order-md-last.img {
+			width: 50%; /* Adjust this value as needed */
+		  }
+		}
+		
+		/* For screens between 600px and 1200px */
+		@media (min-width: 600px) and (max-width: 1200px) {
+		  .one-third.js-fullheight.order-md-last.img {
+			width: 70%; /* Adjust this value as needed */
+		  }
+		}
+		
+		/* For screens larger than 1200px */
+		@media (min-width: 1200px) {
+		  .one-third.js-fullheight.order-md-last.img {
+			width: 80%; /* Adjust this value as needed */
+		  }
+		}
+		</style>
 	  
 	  
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
@@ -142,7 +174,7 @@
 	      	<div class="overlay"></div>
 	         <div class="container">
 	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/e5f97262-1691-4432-905a-0a2628dc716e.png);">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/e5f97262-1691-4432-905a-0a2628dc716e.jpg);">
 	          	 <div class="overlay"></div>
 	          	</div>
 		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
@@ -283,7 +315,7 @@
 								<p>I'm an M.Tech Data Science graduate from Amity University, skilled in Python, Machine Learning, Deep Learning, and Cloud Technologies like Azure, AWS, and GCP. My background includes a strong foundation in Computer Science with a B.Tech from Galgotias University. I hold Microsoft certifications in Azure AI, Data Engineering, and Data Science. Notably, I secured first place in SIH 2022 (ISRO) for a project on cyclone intensity estimation using deep learning. My expertise spans from theoretical knowledge to practical applications, making me a versatile candidate ready to tackle complex challenges in the tech industry..</p>
 								<ul class="about-info mt-4 px-md-0 px-2">
 									<li class="d-flex"><span>Profile:</span> <span>Data Science &amp; Analytics</span></li>
-									<li class="d-flex"><span>Domain:</span> <span>Retail, Ecommerce, Banking, Healthcare &amp; Digital Marketing</span></li>
+									<li class="d-flex"><span>Domain:</span> <span>Banking, Ecommerce, Retail, Healthcare &amp; IoT</span></li>
 									<li class="d-flex"><span>Education:</span> <span>Masters of Technology</span></li>
 									<li class="d-flex"><span>Language:</span> <span>English, Hindi</span></li>
 									<li class="d-flex"><span>BI Tools:</span> <span>Microsoft Power BI &amp; Tableau</span></li>
